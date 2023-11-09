@@ -46,6 +46,19 @@ public abstract class TestBase {
         }
     }
 
+    //Window Handles
+    public void window(int index){
+        driver.switchTo().window(driver.getWindowHandles().toArray()[index].toString());
+    }
+
+    //iframe index
+    public void frameIndex(int index){
+        driver.switchTo().frame(index);
+    }
+
+
+
+
 
 
 }
